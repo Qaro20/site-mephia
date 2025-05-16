@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Mephia Group</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo-text">
+                <img src="images/logo.png.jpg" alt="Mephia Group Logo">
+                <span>Mephia Group</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="tarifs.html">Tarifs</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="contact">
+            <h1>Contactez-nous</h1>
+            <form id="contactForm" action="mailto:paranoqaro@gmail.com" method="POST" enctype="text/plain">
+                <div class="form-group">
+                    <label for="discord">Pseudo Discord</label>
+                    <input type="text" id="discord" name="discord" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="budget">Budget (en €)</label>
+                    <input type="number" id="budget" name="budget" min="0" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email de contact</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Vos idées et besoins</label>
+                    <textarea id="message" name="message" rows="6" required></textarea>
+                </div>
+
+                <button type="submit" class="cta-button">Envoyer</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="images/logo.png.jpg" alt="Mephia Group Logo">
+            </div>
+            <div class="footer-links">
+                <a href="conditions-utilisation.html">Conditions d'utilisation</a>
+                <a href="politique-confidentialite.html">Politique de confidentialité</a>
+                <a href="conditions-vente.html">Conditions de vente</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html> 
